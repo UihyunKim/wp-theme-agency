@@ -370,9 +370,6 @@ template {
 }
 
 #fullpage .section1 h1 {
-  font-weight: bold;
-  color: #fff;
-  margin: 0;
   line-height: 1em;
   font-size: 3em;
 }
@@ -408,43 +405,60 @@ template {
   }
 }
 
+#fullpage .section1 a:hover {
+  text-decoration: none;
+}
+
 #fullpage .section1 .scroll-down {
   bottom: 10%;
 }
 
-#fullpage .section1 .scroll-down p {
-  color: white;
-  text-align: center;
-}
-
 #fullpage .section1 .scroll-down .arrow {
-  border-radius: 50%;
-  margin: auto;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
-#fullpage .section1 .scroll-down .arrow a {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-#fullpage .section1 .scroll-down .arrow a img {
-  margin: auto;
 }
 
 #fullpage .section2 {
   background-color: #11749e;
 }
 
+#fullpage .section2 .awesome div:first-child {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#fullpage .section2 .awesome div:first-child h1 {
+  font-size: 2.5em;
+}
+
+#fullpage .section2 .awesome div:last-child {
+  font-size: 13em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#fullpage .section2 figure {
+  width: 45%;
+  padding-top: 45%;
+}
+
+#fullpage .section2 figure div {
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#fullpage .section2 h1 {
+  font-size: 0.9em;
+}
+
 @media (min-width: 992px) {
   body#bootstrap-overrides nav {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     height: 90px;
-    padding: 0;
   }
   body#bootstrap-overrides nav .container, body#bootstrap-overrides nav .navbar-collapse, body#bootstrap-overrides nav ul.navbar-nav, body#bootstrap-overrides nav li.nav-item {
     height: 100%;
@@ -454,9 +468,6 @@ template {
   }
   body#bootstrap-overrides nav .nav-item.active {
     border-bottom: 5px solid #11749e;
-  }
-  body#bootstrap-overrides nav .nav-item .sr-only {
-    display: none;
   }
   body#bootstrap-overrides nav .nav-sns img {
     margin: 0 10px;

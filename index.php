@@ -17,7 +17,7 @@
 </head>
 <body id='bootstrap-overrides'>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-lg-0">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="<?php bloginfo('template_url') ?>/img/logo.png" width="70px" height="auto" alt="">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse col-lg-9" id="navbarNavDropdown">
         <ul class="navbar-nav col justify-content-between">
           <li class="nav-item active d-flex align-items-center">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home <span class="sr-only d-lg-none">(current)</span></a>
           </li>
           <li class="nav-item d-flex align-items-center">
             <a class="nav-link" href="#">Pages</a>
@@ -58,26 +58,80 @@
 
   <div id="fullpage">
 
+    <!-- section 1 -->
     <section class="section section1" data-anchor="slide1">
+
       <div class="content-wrapper container d-flex flex-column justify-content-center align-items-center position-relative">
         <div class="text-center">
-          <h1>CREATIVES</h1>
+          <h1 class="font-weight-bold text-white m-0">CREATIVES</h1>
           <h2>POWER BY OLDERTHANYESTERDAY.COM</h2>
         </div>
-        <div class="scroll-down position-absolute">
-          <p>Scroll Down</p>
-          <div class="arrow">
-            <a href="#slide2" class="d-flex align-items-center">
-              <img src="<?php bloginfo('template_url') ?>/img/down-arrow.png" alt="down-arrow">
-            </a>
+
+        <a href="#slide2" class="scroll-down position-absolute">
+          <p class="text-white text-center" >Scroll Down</p>
+          <div class="arrow border border-white rounded-circle m-auto">
+            <div class="d-flex align-items-center w-100 h-100 block">
+              <img class="m-auto" src="<?php bloginfo('template_url') ?>/img/down-arrow.png" alt="down-arrow">
+            </div>
           </div>
-        </div>
+        </a>
       </div>
+
     </section>
 
+    <!-- section 2 -->
     <section class="section section2" data-anchor="slide2">
       <div class="content-wrapper container d-flex flex-column justify-content-center align-items-center">
-        <h1>next section</h1>
+
+        <section class="awesome w-100 position-relative">
+          <div class="text-center text-white position-absolute d-flex align-items-center justify-content-center">
+            <h1> WE ARE AN AWESOME AGENCY </h1>
+          </div>
+          <div class="w-100 text-center font-weight-bold">W</div>
+        </section>
+
+        <section class="features container row d-flex">
+
+          <article class="col-md-3 col-6 d-flex flex-column align-items-center">
+            <figure class="position-relative">
+              <div class="rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                <img src="<?php bloginfo('template_url') ?>/img/icon-write.png" alt="write icon">
+              </div>
+            </figure>
+            <h1 class="text-white font-weight-bold mt-1">FEATURE ONE</h1>
+            <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
+          </article>
+
+          <article class="col-md-3 col-6 d-flex flex-column align-items-center">
+            <figure class="position-relative">
+              <div class="rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                <img src="<?php bloginfo('template_url') ?>/img/icon-write.png" alt="write icon">
+              </div>
+            </figure>
+            <h1 class="text-white font-weight-bold mt-1">FEATURE TWO</h1>
+            <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
+          </article>
+
+          <article class="col-md-3 col-6 d-flex flex-column align-items-center">
+            <figure class="position-relative">
+              <div class="rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                <img src="<?php bloginfo('template_url') ?>/img/icon-search.png" alt="search icon">
+              </div>
+            </figure>
+            <h1 class="text-white font-weight-bold mt-1">FEATURE THREE</h1>
+            <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
+          </article>
+
+          <article class="col-md-3 col-6 d-flex flex-column align-items-center">
+            <figure class="position-relative">
+              <div class="rounded-circle position-absolute d-flex justify-content-center align-items-center">
+                <img src="<?php bloginfo('template_url') ?>/img/icon-bubble.png" alt="bubble icon">
+              </div>
+            </figure>
+            <h1 class="text-white font-weight-bold mt-1">FEATURE FOUR</h1>
+            <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
+          </article>
+        </section>
       </div>
     </section>
 
