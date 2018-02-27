@@ -1,0 +1,156 @@
+/*
+Theme Name: wp-agency
+Theme URI: http: //localhost/wp-agency/
+Author: Uihyun KIM
+Author URI: https://olderthanyesterday.com/
+Description: private project to show converting psd to wordpress theme: responsive and animated
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Lorem..
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+ * bootstrap break points
+ */
+
+@import 'css/modules/breakpoint';
+
+/*
+ * Normalize.css
+ */
+
+@import 'css/normalize';
+
+// color
+$sky: #11749e;
+$light-sky: #2e85aa;
+
+/*
+ * fullpage.js commons
+ */
+
+#fullpage {
+  .section .content-wrapper {
+    height: 100%;
+  }
+}
+
+/*
+ * section 1
+ */
+
+#fullpage {
+
+  .section1 {
+    background-image: url('img/front-parallax-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+
+      font-weight: bold;
+      color: #fff;
+      margin: 0;
+      line-height: 1em;
+      
+      font-size: 3em;
+      @media (min-width: $md) { font-size: 7em; }
+      @media (min-width: $lg) { font-size: 9em; }
+    }
+
+    h2 {
+      letter-spacing: 4px;
+      color: $sky;
+
+      font-size: 0.7em;
+      text-align: center;
+      @media (min-width: $md) { font-size: 1.5em; }
+      @media (min-width: $lg) { font-size: 2em; }
+    }
+
+    .scroll-down {
+      bottom: 10%;
+
+      p {
+        color: white;
+        text-align: center;
+      }
+
+      .arrow {
+        border-radius: 50%;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid white;
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+
+          img {
+            margin: auto;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+  .section2 {
+    background-color: $sky;
+  }
+
+}
+
+
+
+
+// Navigation
+body#bootstrap-overrides {
+
+  @media (min-width: $lg) {
+
+    nav {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      height: 90px;
+      padding: 0;
+  
+      .container, .navbar-collapse, ul.navbar-nav, li.nav-item{
+        height: 100%;
+      }
+  
+      .nav-link {
+        color: #fff;
+      }
+  
+      .nav-item.active {
+        border-bottom: 5px solid $sky;
+      }
+  
+      .nav-item {
+        .sr-only {
+          display: none;
+        }
+  
+      }
+      
+      .nav-sns img {
+        margin: 0 10px;
+      }
+  
+    }
+
+  }
+
+}
