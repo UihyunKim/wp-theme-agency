@@ -15,7 +15,7 @@
 
   <?php wp_head(); ?>
 </head>
-<body id='bootstrap-overrides'>
+<body id='bootstrap-overrides' class='prx-1'>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-lg-0">
     <div class="container">
@@ -167,7 +167,7 @@
           </article>
 
           <!-- NEWS -->
-          <article class="d-none d-md-flex h-50 container col-12 col-md-6 align-items-center">
+          <article class="d-none d-md-flex h-50 container col-12 col-md-6 align-items-center bg-white">
             <div class="row">
               <div class="news-container col-12 col-xl-8 offset-xl-1">
                 <div class="col-12">Jan 4. 2018 | In Culture</div>
@@ -187,7 +187,7 @@
     </section> <!-- End section 3 -->
 
     <!-- section 4 -->
-    <section class="section section4" data-anchor="slide4">
+    <section class="section section4 bg-white" data-anchor="slide4">
       <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
 
         <div class="height-without-nav d-flex flex-column justify-content-around">
@@ -232,7 +232,61 @@
         </div>
       </div>
     </section> <!-- end section 4 -->
-    
+
+    <!-- section 5 -->
+    <section class="section section5" data-anchor="slide5">
+      <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
+        <div class="height-without-nav d-flex flex-column justify-content-around w-100">
+          <div class="row">
+
+            <div class="col-12 col-sm-5 offset-sm-1 d-flex align-items-center">
+
+              <article>
+                <h1 class="text-white">Lorem, ipsum dolor.</h1>
+                <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus earum placeat, cumque distinctio, nihil reiciendis expedita quos deleniti aliquid nisi magni esse! Perspiciatis laborum inventore aliquam cupiditate nesciunt tenetur deleniti.</p>
+                <div>
+                  <div class="progress mb-3" style="height: 30px;">
+                    <div  class="progress-bar prb-1 text-left text-uppercase" 
+                          role="progressbar" 
+                          style="width: 0%;" 
+                          aria-valuenow="80" 
+                          aria-valuemin="0" 
+                          aria-valuemax="100">
+                          <span class="pl-3">Fully Responsive Design</span>
+                    </div>
+                  </div>
+                  <div class="progress mb-3" style="height: 30px;">
+                    <div  class="progress-bar prb-2 text-left text-uppercase" 
+                          role="progressbar" 
+                          style="width: 0%;" 
+                          aria-valuenow="90" 
+                          aria-valuemin="0" 
+                          aria-valuemax="100">
+                          <span class="pl-3">High Quality Code</span>
+                    </div>
+                  </div>
+                  <div class="progress mb-3" style="height: 30px;">
+                    <div  class="progress-bar prb-3 text-left text-uppercase" 
+                          role="progressbar" 
+                          style="width: 0%;" 
+                          aria-valuenow="100" 
+                          aria-valuemin="0" 
+                          aria-valuemax="100">
+                          <span class="pl-3">Different Headers & layout</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-4 offset-sm-1">
+              <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/mockup.png" alt="smartphone design mockup">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- End section 5 -->
   </div>
 
   

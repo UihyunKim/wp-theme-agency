@@ -358,6 +358,13 @@ template {
   height: 100%;
 }
 
+body#bootstrap-overrides {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 @media (min-width: 992px) {
   body#bootstrap-overrides nav {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -380,17 +387,24 @@ template {
   }
 }
 
+body#bootstrap-overrides.prx-1 {
+  background-image: url("img/front-parallax-bg1.png");
+}
+
+body#bootstrap-overrides.prx-2 {
+  background-image: url("img/front-parallax-bg2.png");
+}
+
+/*
+ * Global style
+ */
+.height-without-nav {
+  height: calc(100% - 88px);
+}
+
 /*
  * section 1
  */
-#fullpage .section1 {
-  background-image: url("img/front-parallax-bg.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 #fullpage .section1 h1 {
   line-height: 1em;
   font-size: 3em;
@@ -489,10 +503,6 @@ template {
   height: calc(100% - 88px);
 }
 
-#fullpage .section4 .content-wrapper .height-without-nav {
-  height: calc(100% - 88px);
-}
-
 #fullpage .section4 .content-wrapper .blog-title div:first-child {
   top: 0;
   bottom: 0;
@@ -523,5 +533,30 @@ template {
 #fullpage .section4 .content-wrapper .blog-container h1 {
   color: #11749e;
   font-size: 1em;
+}
+
+#fullpage .section5 .progress {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#fullpage .section5 .progress .progress-bar {
+  background-color: #11749e;
+}
+
+#fullpage .section5 .progress .progress-bar.prb-1 {
+  transition-duration: 0.4s;
+}
+
+#fullpage .section5 .progress .progress-bar.prb-2 {
+  transition-duration: 0.7s;
+}
+
+#fullpage .section5 .progress .progress-bar.prb-3 {
+  transition-duration: 1s;
+}
+
+#fullpage .section5 .progress .progress-bar span {
+  white-space: nowrap;
 }
 /*# sourceMappingURL=style.css.map */

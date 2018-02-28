@@ -64,6 +64,22 @@ body#bootstrap-overrides {
       }
     }
   }
+
+  // parallax background image
+  &.prx-1 { background-image: url('img/front-parallax-bg1.png'); }
+  &.prx-2 { background-image: url('img/front-parallax-bg2.png'); }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*
+ * Global style
+ */
+
+.height-without-nav {
+  height: calc(100% - 88px);
 }
 
 /*
@@ -71,13 +87,13 @@ body#bootstrap-overrides {
  */
 
 #fullpage {
-
+  
   .section1 {
-    background-image: url('img/front-parallax-bg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-image: url('img/front-parallax-bg.png');
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
 
     h1 {
       line-height: 1em;
@@ -168,20 +184,13 @@ body#bootstrap-overrides {
       }
     }
 
-    .content-wrapper>.row>article:nth-child(4) .news-container{
-      // top: 3.3em;
-      // left: 2em;
-    }
-
   } // end section 3
 
   // section 4
   .section4 {
 
     .content-wrapper {
-      .height-without-nav {
-        height: calc(100% - 88px);
-      }
+      
       
       .blog-title {
         div:first-child {
@@ -214,8 +223,30 @@ body#bootstrap-overrides {
       }
     }
 
-
   } // end section 4
+
+  // section5
+  .section5 {
+
+    .progress {
+      
+      background-color:rgba(0, 0, 0, 0);
+      border-radius: 0;
+
+      .progress-bar {
+        
+        &.prb-1 { transition-duration: 0.4s };
+        &.prb-2 { transition-duration: 0.7s };
+        &.prb-3 { transition-duration: 1s };
+
+        background-color: $sky;
+        span {
+          white-space: nowrap;
+        }
+      }
+    }
+
+  }
 }
 
 
