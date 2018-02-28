@@ -405,24 +405,24 @@ body#bootstrap-overrides.prx-2 {
 /*
  * section 1
  */
-#fullpage .section1 h1 {
+#fullpage #section1 h1 {
   line-height: 1em;
   font-size: 3em;
 }
 
 @media (min-width: 768px) {
-  #fullpage .section1 h1 {
+  #fullpage #section1 h1 {
     font-size: 7em;
   }
 }
 
 @media (min-width: 992px) {
-  #fullpage .section1 h1 {
+  #fullpage #section1 h1 {
     font-size: 9em;
   }
 }
 
-#fullpage .section1 h2 {
+#fullpage #section1 h2 {
   letter-spacing: 4px;
   color: #11749e;
   font-size: 0.7em;
@@ -430,56 +430,56 @@ body#bootstrap-overrides.prx-2 {
 }
 
 @media (min-width: 768px) {
-  #fullpage .section1 h2 {
+  #fullpage #section1 h2 {
     font-size: 1.5em;
   }
 }
 
 @media (min-width: 992px) {
-  #fullpage .section1 h2 {
+  #fullpage #section1 h2 {
     font-size: 2em;
   }
 }
 
-#fullpage .section1 a:hover {
+#fullpage #section1 a:hover {
   text-decoration: none;
 }
 
-#fullpage .section1 .scroll-down {
+#fullpage #section1 .scroll-down {
   bottom: 10%;
 }
 
-#fullpage .section1 .scroll-down .arrow {
+#fullpage #section1 .scroll-down .arrow {
   width: 50px;
   height: 50px;
 }
 
-#fullpage .section2 {
+#fullpage #section2 {
   background-color: #11749e;
 }
 
-#fullpage .section2 .awesome div:first-child {
+#fullpage #section2 .awesome div:first-child {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-#fullpage .section2 .awesome div:first-child h1 {
+#fullpage #section2 .awesome div:first-child h1 {
   font-size: 2.5em;
 }
 
-#fullpage .section2 .awesome div:last-child {
+#fullpage #section2 .awesome div:last-child {
   font-size: 13em;
   color: rgba(255, 255, 255, 0.5);
 }
 
-#fullpage .section2 .features figure {
+#fullpage #section2 .features figure {
   width: 45%;
   padding-top: 45%;
 }
 
-#fullpage .section2 .features figure div {
+#fullpage #section2 .features figure div {
   background-color: rgba(255, 255, 255, 0.2);
   top: 0;
   bottom: 0;
@@ -487,76 +487,85 @@ body#bootstrap-overrides.prx-2 {
   right: 0;
 }
 
-#fullpage .section2 .features h1 {
+#fullpage #section2 .features h1 {
   font-size: 0.9em;
 }
 
-#fullpage .section3 img {
+#fullpage #section3 img {
   object-fit: cover;
 }
 
-#fullpage .section3 .content-wrapper > .row > article:nth-child(1) {
+#fullpage #section3 .content-wrapper > .row > article:nth-child(1) {
   background-color: #222222;
 }
 
-#fullpage .section3 .content-wrapper > .row > article:nth-child(1) .row {
+#fullpage #section3 .content-wrapper > .row > article:nth-child(1) .row {
   height: calc(100% - 88px);
 }
 
-#fullpage .section4 .content-wrapper .blog-title div:first-child {
+#fullpage #section4 .content-wrapper .blog-title div:first-child {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-#fullpage .section4 .content-wrapper .blog-title div:first-child h1 {
+#fullpage #section4 .content-wrapper .blog-title div:first-child h1 {
   font-size: 2.5em;
 }
 
-#fullpage .section4 .content-wrapper .blog-title div:last-child {
+#fullpage #section4 .content-wrapper .blog-title div:last-child {
   font-size: 6em;
   color: rgba(0, 0, 0, 0.2);
   line-height: 1em;
 }
 
 @media (min-width: 768px) {
-  #fullpage .section4 .content-wrapper .blog-title div:last-child {
+  #fullpage #section4 .content-wrapper .blog-title div:last-child {
     font-size: 13em;
   }
 }
 
-#fullpage .section4 .content-wrapper h2 {
+#fullpage #section4 .content-wrapper h2 {
   font-size: 1.8em;
 }
 
-#fullpage .section4 .content-wrapper .blog-container h1 {
+#fullpage #section4 .content-wrapper .blog-container h1 {
   color: #11749e;
   font-size: 1em;
 }
 
-#fullpage .section5 .progress {
+@media (max-width: 575.98px) {
+  #fullpage #section5 img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+#fullpage #section5 .progress {
   background-color: transparent;
   border-radius: 0;
 }
 
-#fullpage .section5 .progress .progress-bar {
+#fullpage #section5 .progress .progress-bar {
   background-color: #11749e;
 }
 
-#fullpage .section5 .progress .progress-bar.prb-1 {
+#fullpage #section5 .progress .progress-bar.prb-1 {
   transition-duration: 0.4s;
 }
 
-#fullpage .section5 .progress .progress-bar.prb-2 {
+#fullpage #section5 .progress .progress-bar.prb-2 {
   transition-duration: 0.7s;
 }
 
-#fullpage .section5 .progress .progress-bar.prb-3 {
+#fullpage #section5 .progress .progress-bar.prb-3 {
   transition-duration: 1s;
 }
 
-#fullpage .section5 .progress .progress-bar span {
+#fullpage #section5 .progress .progress-bar span {
   white-space: nowrap;
 }
 /*# sourceMappingURL=style.css.map */

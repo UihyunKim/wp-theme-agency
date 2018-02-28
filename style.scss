@@ -31,6 +31,9 @@ $sky: #11749e;
 $light-sky: #2e85aa;
 $dark: #222222;
 
+// etc
+$nav-height: 88px;
+
 /*
  * fullpage.js commons
  */
@@ -43,7 +46,7 @@ $dark: #222222;
 
 // Navigation
 body#bootstrap-overrides {
-  @media (min-width: $lg) {
+  @media #{$up-lg} {
     nav {
       border-bottom: 2px solid rgba(255, 255, 255, 0.2);
       height: 90px;
@@ -79,7 +82,7 @@ body#bootstrap-overrides {
  */
 
 .height-without-nav {
-  height: calc(100% - 88px);
+  height: calc(100% - #{$nav-height});
 }
 
 /*
@@ -88,7 +91,7 @@ body#bootstrap-overrides {
 
 #fullpage {
   
-  .section1 {
+  #section1 {
     // background-image: url('img/front-parallax-bg.png');
     // background-position: center center;
     // background-repeat: no-repeat;
@@ -99,8 +102,8 @@ body#bootstrap-overrides {
       line-height: 1em;
       
       font-size: 3em; // default - mobile
-      @media (min-width: $md) { font-size: 7em; }
-      @media (min-width: $lg) { font-size: 9em; }
+      @media #{$up-md} { font-size: 7em; }
+      @media #{$up-lg} { font-size: 9em; }
     }
 
     h2 {
@@ -109,8 +112,8 @@ body#bootstrap-overrides {
 
       font-size: 0.7em;
       text-align: center;
-      @media (min-width: $md) { font-size: 1.5em; }
-      @media (min-width: $lg) { font-size: 2em; }
+      @media #{$up-md} { font-size: 1.5em; }
+      @media #{$up-lg} { font-size: 2em; }
     }
 
     a:hover {
@@ -128,7 +131,7 @@ body#bootstrap-overrides {
 
   }
 
-  .section2 {
+  #section2 {
     background-color: $sky;
 
     .awesome {
@@ -171,7 +174,7 @@ body#bootstrap-overrides {
   } // end section 2
 
   // section 3
-  .section3 {
+  #section3 {
     img {
       object-fit: cover;
     }
@@ -179,7 +182,7 @@ body#bootstrap-overrides {
     .content-wrapper>.row>article:nth-child(1) {
       background-color: $dark;
       .row {
-        height: calc(100% - 88px);
+        height: calc(100% - #{$nav-height});
 
       }
     }
@@ -187,7 +190,7 @@ body#bootstrap-overrides {
   } // end section 3
 
   // section 4
-  .section4 {
+  #section4 {
 
     .content-wrapper {
       
@@ -204,7 +207,7 @@ body#bootstrap-overrides {
         }
         div:last-child {
           font-size: 6em;
-          @media (min-width: $md) { font-size: 13em; }
+          @media #{$up-md} { font-size: 13em; }
           color: rgba(0, 0, 0, 0.2);
           line-height: 1em;
         }
@@ -226,8 +229,18 @@ body#bootstrap-overrides {
   } // end section 4
 
   // section5
-  .section5 {
+  #section5 {
 
+
+    img {
+      @media #{$down-xs} {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+    
     .progress {
       
       background-color:rgba(0, 0, 0, 0);
@@ -235,14 +248,13 @@ body#bootstrap-overrides {
 
       .progress-bar {
         
+        background-color: $sky;
+
         &.prb-1 { transition-duration: 0.4s };
         &.prb-2 { transition-duration: 0.7s };
         &.prb-3 { transition-duration: 1s };
 
-        background-color: $sky;
-        span {
-          white-space: nowrap;
-        }
+        span { white-space: nowrap; }
       }
     }
 

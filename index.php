@@ -59,7 +59,7 @@
   <div id="fullpage">
 
     <!-- section 1 -->
-    <section class="section section1" data-anchor="slide1">
+    <section id="section1" class="section" data-anchor="slide1">
 
       <div class="content-wrapper container d-flex flex-column justify-content-center align-items-center position-relative">
         <div class="text-center">
@@ -80,7 +80,7 @@
     </section> <!-- End section 1 -->
 
     <!-- section 2 -->
-    <section class="section section2" data-anchor="slide2">
+    <section id="section2" class="section" data-anchor="slide2">
       <div class="content-wrapper container d-flex flex-column justify-content-center align-items-center">
 
         <section class="awesome w-100 position-relative">
@@ -136,7 +136,7 @@
     </section> <!-- End section 2 -->
 
     <!-- section 3 -->
-    <section class="section section3" data-anchor="slide3">
+    <section id="section3" class="section" data-anchor="slide3">
       <div class="content-wrapper container-fluid">
         <div class="row h-100">
 
@@ -187,7 +187,7 @@
     </section> <!-- End section 3 -->
 
     <!-- section 4 -->
-    <section class="section section4 bg-white" data-anchor="slide4">
+    <section id="section4" class="section bg-white" data-anchor="slide4">
       <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
 
         <div class="height-without-nav d-flex flex-column justify-content-around">
@@ -234,12 +234,12 @@
     </section> <!-- end section 4 -->
 
     <!-- section 5 -->
-    <section class="section section5" data-anchor="slide5">
+    <section id="section5" class="section" data-anchor="slide5">
       <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
-        <div class="height-without-nav d-flex flex-column justify-content-around w-100">
+        <div class="height-without-nav d-flex justify-content-around w-100">
           <div class="row">
 
-            <div class="col-12 col-sm-5 offset-sm-1 d-flex align-items-center">
+            <div class="col-12 col-sm-6 col-md-5 offset-md-1 d-flex align-items-center">
 
               <article>
                 <h1 class="text-white">Lorem, ipsum dolor.</h1>
@@ -279,7 +279,7 @@
               </article>
             </div>
 
-            <div class="col-12 col-sm-4 offset-sm-1">
+            <div class="col-12 col-sm-6 col-md-4 offset-md-1 d-flex flex-row align-items-end align-items-sm-center">
               <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/mockup.png" alt="smartphone design mockup">
             </div>
 
@@ -287,6 +287,18 @@
         </div>
       </div>
     </section> <!-- End section 5 -->
+
+    <!-- section 6 -->
+    <section id="section6" class="section" data-anchor="slide6">
+      <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
+        <div class="height-without-nav d-flex flex-column justify-content-around w-100">
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- End section 5 -->
+
   </div>
 
   
