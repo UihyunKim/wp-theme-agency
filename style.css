@@ -358,6 +358,28 @@ template {
   height: 100%;
 }
 
+@media (min-width: 992px) {
+  body#bootstrap-overrides nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    height: 90px;
+  }
+  body#bootstrap-overrides nav .container,
+  body#bootstrap-overrides nav .navbar-collapse,
+  body#bootstrap-overrides nav ul.navbar-nav,
+  body#bootstrap-overrides nav li.nav-item {
+    height: 100%;
+  }
+  body#bootstrap-overrides nav .nav-link {
+    color: #fff;
+  }
+  body#bootstrap-overrides nav .nav-item.active {
+    border-bottom: 5px solid #11749e;
+  }
+  body#bootstrap-overrides nav .nav-sns img {
+    margin: 0 10px;
+  }
+}
+
 /*
  * section 1
  */
@@ -438,12 +460,12 @@ template {
   color: rgba(255, 255, 255, 0.5);
 }
 
-#fullpage .section2 figure {
+#fullpage .section2 .features figure {
   width: 45%;
   padding-top: 45%;
 }
 
-#fullpage .section2 figure div {
+#fullpage .section2 .features figure div {
   background-color: rgba(255, 255, 255, 0.2);
   top: 0;
   bottom: 0;
@@ -451,26 +473,55 @@ template {
   right: 0;
 }
 
-#fullpage .section2 h1 {
+#fullpage .section2 .features h1 {
   font-size: 0.9em;
 }
 
-@media (min-width: 992px) {
-  body#bootstrap-overrides nav {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    height: 90px;
+#fullpage .section3 img {
+  object-fit: cover;
+}
+
+#fullpage .section3 .content-wrapper > .row > article:nth-child(1) {
+  background-color: #222222;
+}
+
+#fullpage .section3 .content-wrapper > .row > article:nth-child(1) .row {
+  height: calc(100% - 88px);
+}
+
+#fullpage .section4 .content-wrapper .height-without-nav {
+  height: calc(100% - 88px);
+}
+
+#fullpage .section4 .content-wrapper .blog-title div:first-child {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#fullpage .section4 .content-wrapper .blog-title div:first-child h1 {
+  font-size: 2.5em;
+}
+
+#fullpage .section4 .content-wrapper .blog-title div:last-child {
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.2);
+  line-height: 1em;
+}
+
+@media (min-width: 768px) {
+  #fullpage .section4 .content-wrapper .blog-title div:last-child {
+    font-size: 13em;
   }
-  body#bootstrap-overrides nav .container, body#bootstrap-overrides nav .navbar-collapse, body#bootstrap-overrides nav ul.navbar-nav, body#bootstrap-overrides nav li.nav-item {
-    height: 100%;
-  }
-  body#bootstrap-overrides nav .nav-link {
-    color: #fff;
-  }
-  body#bootstrap-overrides nav .nav-item.active {
-    border-bottom: 5px solid #11749e;
-  }
-  body#bootstrap-overrides nav .nav-sns img {
-    margin: 0 10px;
-  }
+}
+
+#fullpage .section4 .content-wrapper h2 {
+  font-size: 1.8em;
+}
+
+#fullpage .section4 .content-wrapper .blog-container h1 {
+  color: #11749e;
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,6 +29,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // color
 $sky: #11749e;
 $light-sky: #2e85aa;
+$dark: #222222;
 
 /*
  * fullpage.js commons
@@ -37,6 +38,31 @@ $light-sky: #2e85aa;
 #fullpage {
   .section .content-wrapper {
     height: 100%;
+  }
+}
+
+// Navigation
+body#bootstrap-overrides {
+  @media (min-width: $lg) {
+    nav {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      height: 90px;
+      .container,
+      .navbar-collapse,
+      ul.navbar-nav,
+      li.nav-item {
+        height: 100%;
+      }
+      .nav-link {
+        color: #fff;
+      }
+      .nav-item.active {
+        border-bottom: 5px solid $sky;
+      }
+      .nav-sns img {
+        margin: 0 10px;
+      }
+    }
   }
 }
 
@@ -89,72 +115,109 @@ $light-sky: #2e85aa;
   .section2 {
     background-color: $sky;
 
-    .awesome div:first-child {
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
-      h1 {
-        font-size: 2.5em;
-      }
-    }
-
-    .awesome div:last-child {
-      font-size: 13em;
-      color: rgba(255, 255, 255, 0.5);
-    }
-
-    figure {
-      width: 45%;
-      padding-top: 45%;
-      
-      div {
-        background-color: rgba(255, 255, 255, 0.2);
+    .awesome {
+      div:first-child {
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
+
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+
+      div:last-child {
+        font-size: 13em;
+        color: rgba(255, 255, 255, 0.5);
       }
     }
 
-    h1 {
-      font-size: 0.9em;
-    }
-  }
+    .features {
 
+      figure {
+        width: 45%;
+        padding-top: 45%;
+        
+        div {
+          background-color: rgba(255, 255, 255, 0.2);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+      
+      h1 {
+        font-size: 0.9em;
+      }
+    }
+  } // end section 2
+
+  // section 3
+  .section3 {
+    img {
+      object-fit: cover;
+    }
+
+    .content-wrapper>.row>article:nth-child(1) {
+      background-color: $dark;
+      .row {
+        height: calc(100% - 88px);
+
+      }
+    }
+
+    .content-wrapper>.row>article:nth-child(4) .news-container{
+      // top: 3.3em;
+      // left: 2em;
+    }
+
+  } // end section 3
+
+  // section 4
+  .section4 {
+
+    .content-wrapper {
+      .height-without-nav {
+        height: calc(100% - 88px);
+      }
+      
+      .blog-title {
+        div:first-child {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          h1 {
+            font-size: 2.5em;
+          }
+        }
+        div:last-child {
+          font-size: 6em;
+          @media (min-width: $md) { font-size: 13em; }
+          color: rgba(0, 0, 0, 0.2);
+          line-height: 1em;
+        }
+      }
+
+      h2{
+        font-size: 1.8em;
+      }
+
+      .blog-container {
+
+        h1 {
+          color: $sky;
+          font-size: 1em;
+        }
+      }
+    }
+
+
+  } // end section 4
 }
 
 
 
 
-// Navigation
-body#bootstrap-overrides {
-
-  @media (min-width: $lg) {
-
-    nav {
-      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-      height: 90px;
-
-      .container, .navbar-collapse, ul.navbar-nav, li.nav-item{
-        height: 100%;
-      }
-  
-      .nav-link {
-        color: #fff;
-      }
-  
-      .nav-item.active {
-        border-bottom: 5px solid $sky;
-      }
-
-      .nav-sns img {
-        margin: 0 10px;
-      }
-  
-    }
-
-  }
-
-}

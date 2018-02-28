@@ -77,7 +77,7 @@
         </a>
       </div>
 
-    </section>
+    </section> <!-- End section 1 -->
 
     <!-- section 2 -->
     <section class="section section2" data-anchor="slide2">
@@ -98,7 +98,7 @@
                 <img src="<?php bloginfo('template_url') ?>/img/icon-write.png" alt="write icon">
               </div>
             </figure>
-            <h1 class="text-white font-weight-bold mt-1">FEATURE ONE</h1>
+            <h1 class="text-white font-weight-bold mt-0 mt-md-1 mb-3 mb-md-0">FEATURE ONE</h1>
             <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
           </article>
 
@@ -108,7 +108,7 @@
                 <img src="<?php bloginfo('template_url') ?>/img/icon-write.png" alt="write icon">
               </div>
             </figure>
-            <h1 class="text-white font-weight-bold mt-1">FEATURE TWO</h1>
+            <h1 class="text-white font-weight-bold mt-0 mt-md-1 mb-3 mb-md-0">FEATURE TWO</h1>
             <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
           </article>
 
@@ -118,7 +118,7 @@
                 <img src="<?php bloginfo('template_url') ?>/img/icon-search.png" alt="search icon">
               </div>
             </figure>
-            <h1 class="text-white font-weight-bold mt-1">FEATURE THREE</h1>
+            <h1 class="text-white font-weight-bold mt-0 mt-md-1">FEATURE THREE</h1>
             <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
           </article>
 
@@ -128,13 +128,111 @@
                 <img src="<?php bloginfo('template_url') ?>/img/icon-bubble.png" alt="bubble icon">
               </div>
             </figure>
-            <h1 class="text-white font-weight-bold mt-1">FEATURE FOUR</h1>
+            <h1 class="text-white font-weight-bold mt-0 mt-md-1">FEATURE FOUR</h1>
             <p class="text-white text-center mt-2 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem!</p>
           </article>
         </section>
       </div>
-    </section>
+    </section> <!-- End section 2 -->
 
+    <!-- section 3 -->
+    <section class="section section3" data-anchor="slide3">
+      <div class="content-wrapper container-fluid">
+        <div class="row h-100">
+
+          <!-- NEWS -->
+          <article class="order-1 order-md-0 h-50 col-12 col-md-6 d-flex align-items-center align-items-md-end">
+            <div class="row d-flex align-items-center">
+              <div class="news-container col-12 col-xl-8 offset-xl-4">
+                <div class="col-12 text-white">Jan 4. 2018 | In Culture</div>
+                <div class="col-12 text-white">
+                  <h1> Lorem, ipsum dolor. </h1>
+                </div>
+                <div class="col-12 text-white">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit laborum rem perspiciatis expedita similique eos.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ipsa!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PHOTO -->
+          <article class="h-50 col-12 col-md-6 p-0">
+            <img class="h-100 w-100" src="<?php bloginfo('template_url') ?>/img/news1.png" alt="a man working in front of a computer">
+          </article>
+
+          <!-- PHOTO -->
+          <article class="d-none d-md-block h-50 col-12 col-md-6 p-0">
+            <img class="h-100 w-100" src="<?php bloginfo('template_url') ?>/img/news2.png" alt="a man working in front of a computer">
+          </article>
+
+          <!-- NEWS -->
+          <article class="d-none d-md-flex h-50 container col-12 col-md-6 align-items-center">
+            <div class="row">
+              <div class="news-container col-12 col-xl-8 offset-xl-1">
+                <div class="col-12">Jan 4. 2018 | In Culture</div>
+                <div class="col-12">
+                  <h1> Lorem, ipsum dolor. </h1>
+                </div>
+                <div class="col-12">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis, explicabo magnam suscipit facilis, sunt iure iste obcaecati ipsum excepturi labore quae pariatur illum eligendi?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur voluptates veritatis atque. Delectus, accusamus.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </section> <!-- End section 3 -->
+
+    <!-- section 4 -->
+    <section class="section section4" data-anchor="slide4">
+      <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
+
+        <div class="height-without-nav d-flex flex-column justify-content-around">
+          <div class="blog-header">
+            <div class="blog-title w-100 position-relative">
+              <div class="text-center position-absolute d-flex align-items-center justify-content-center">
+                <h1 class="font-weight-bold">LET'S BLOG</h1>
+              </div>
+              <div class="w-100 text-center font-weight-bold">B</div>
+            </div>
+    
+            <div class="text-center d-none d-md-block"><h2>We love clean design and advanced digital solutions.</h2></div>
+          </div>
+  
+          <div class="blog-container row">
+  
+            <article class="col-6 col-md-4 col-lg-3">
+                <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/blog1.png" alt="a meeting with 3 colleagues">
+                <h1 class="text-uppercase text-center">Fresh Summer Campaign</h1>
+                <p class="d-none d-md-block text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident accusantium ducimus tempore recusandae, deserunt inventore!</p>
+            </article>
+  
+            <article class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/blog2.png" alt="a man seeing tablet">
+              <h1 class="text-uppercase text-center">Fresh Summer Campaign</h1>
+              <p class="d-none d-md-block text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident accusantium ducimus tempore recusandae, deserunt inventore!</p>
+            </article>
+  
+            <article class="col-6 col-md-4 col-lg-3">
+              <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/blog3.png" alt="hands on computer keyboard">
+              <h1 class="text-uppercase text-center">Fresh Summer Campaign</h1>
+              <p class="d-none d-md-block text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident accusantium ducimus tempore recusandae, deserunt inventore!</p>
+            </article>
+  
+            <article class="col-6 d-xl-block d-md-none d-lg-block col-md-4 col-lg-3">
+              <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/blog1.png" alt="a meeting with 3 colleagues">
+              <h1 class="text-uppercase text-center">Fresh Summer Campaign</h1>
+              <p class="d-none d-lg-block text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident accusantium ducimus tempore recusandae, deserunt inventore!</p>
+            </article>
+  
+          </div>
+        </div>
+      </div>
+    </section> <!-- end section 4 -->
+    
   </div>
 
   
