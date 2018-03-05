@@ -9,8 +9,7 @@
   <title> <?php is_front_page() ? bloginfo('name') : wp_title() ; ?> </title>
 
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/jquery.fullpage.min.css" />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
 
   <?php wp_head(); ?>
@@ -239,7 +238,7 @@
         <div class="height-without-nav d-flex justify-content-around w-100">
           <div class="row">
 
-            <div class="col-12 col-sm-6 col-md-5 offset-md-1 d-flex align-items-center">
+            <div id='s5-body' class="col-12 col-sm-6 col-md-5 offset-md-1 d-flex align-items-center pb-3 pb-sm-0">
 
               <article>
                 <h1 class="text-white">Lorem, ipsum dolor.</h1>
@@ -280,7 +279,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 offset-md-1 d-flex flex-row align-items-end align-items-sm-center">
-              <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/mockup.png" alt="smartphone design mockup">
+              <img id='s5-img' class="img-fluid" src="<?php bloginfo('template_url') ?>/img/mockup.png" alt="smartphone design mockup">
             </div>
 
           </div>
@@ -289,25 +288,102 @@
     </section> <!-- End section 5 -->
 
     <!-- section 6 -->
-    <section id="section6" class="section" data-anchor="slide6">
+    <section id="section6" class="section bg-white" data-anchor="slide6">
       <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
         <div class="height-without-nav d-flex flex-column justify-content-around w-100">
-          <div class="row">
 
+          <div class="member-header">
+            <div class="member-title w-100 position-relative">
+              <div class="text-center position-absolute d-flex align-items-center justify-content-center">
+                <h1 class="font-weight-bold">OUR TEAM</h1>
+              </div>
+              <div class="w-100 text-center font-weight-bold">T</div>
+            </div>
+    
+            <div class="text-center d-none d-md-block"><h2>Sales long tail influencer pitch release niche market.</h2></div>
           </div>
+
+          <div class="members-container">
+            
+            <div class="row">
+
+              <div class="member col-6 col-md-4 offset-md-2 offset-lg-0 col-lg-3">
+                <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/member-1.png" alt="Card image cap">
+                <div class="m-title position-relative w-75 m-auto">
+                    <div class="bg-white py-sm-3">
+                      <h5 class="m-name text-uppercase text-center font-weight-bold m-0">John Snow</h5>
+                      <p class="m-position text-center m-0">CEO</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="member col-6 col-md-4 col-lg-3">
+                <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/member-2.png" alt="Card image cap">
+                <div class="m-title position-relative w-75 m-auto">
+                    <div class="bg-white py-sm-3">
+                      <h5 class="m-name text-uppercase text-center font-weight-bold m-0">Lady Sansa</h5>
+                      <p class="m-position text-center m-0">Web Designer</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="member col-6 col-md-4 offset-md-2 offset-lg-0 col-lg-3">
+                <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/member-3.png" alt="Card image cap">
+                <div class="m-title position-relative w-75 m-auto">
+                    <div class="bg-white py-sm-3">
+                      <h5 class="m-name text-uppercase text-center font-weight-bold m-0">David Smith</h5>
+                      <p class="m-position text-center m-0">Photographer</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="member col-6 col-md-4 col-lg-3">
+                <img class="img-fluid" src="<?php bloginfo('template_url') ?>/img/member-4.png" alt="Card image cap">
+                <div class="m-title position-relative w-75 m-auto">
+                    <div class="bg-white py-sm-3">
+                      <h5 class="m-name text-uppercase text-center font-weight-bold m-0">Lady Sansa</h5>
+                      <p class="m-position text-center m-0">Photographer</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End members-container -->
         </div>
       </div>
-    </section> <!-- End section 5 -->
+    </section> <!-- End section 6 -->
 
-  </div>
 
-  
+    <!-- section 7 -->
+    <section id="section7" class="section" data-anchor="slide7">
+      <div class="content-wrapper container d-flex flex-column justify-content-end align-items-center">
+        <div class="height-without-nav d-flex flex-column justify-content-around w-100">
+
+          <div class="form-header">
+            <div class="form-title w-100 position-relative">
+              <div class="text-center position-absolute d-flex align-items-center justify-content-center">
+                <h1 class="font-weight-bold text-uppercase text-white">We'd love to hear about your project.</h1>
+              </div>
+              <div class="w-100 text-center font-weight-bold">C</div>
+            </div>
     
+          </div>
+
+        </div> <!-- End height-without-nav -->
+      </div> <!-- End content-wrapper -->
+    </section> <!-- End #section7 -->
 
 
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.fullPage.js"></script>
+
+
+  </div> <!-- End #fullpage -->
+
+
+
+
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.fullpage.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 
 
